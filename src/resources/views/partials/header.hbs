@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
-    <a class="navbar-brand" href="/">Wort</a>
+    <a class="navbar-brand" href="/home">Wort</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,7 +18,7 @@
           <a class="dropdown-item" href="/me/stored/courses">Khoá học của tôi</a>
           <a class="dropdown-item" href="/me/stored/courses">Bài viết của tôi</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Đăng xuất</a>
+          <a class="dropdown-item" href="#" onclick="localStorage.clear();location.href='/login'">Đăng xuất</a>
         </div>
       </li>
     </ul>

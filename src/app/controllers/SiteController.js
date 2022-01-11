@@ -21,6 +21,10 @@ class SiteController {
     search(req, res) {
         res.render('search');
     }
+    // /login
+    login(req, res){
+        res.render('login');
+    }
     
 }
 

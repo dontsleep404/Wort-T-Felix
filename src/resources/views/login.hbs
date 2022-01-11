@@ -1,6 +1,19 @@
+<script>
+if(localStorage.getItem("username") != null){
+location.href = "/home";
+}
+var url_string = location.href;
+var url = new URL(url_string);
+var username = url.searchParams.get("username");
+var password = url.searchParams.get("password");
+if(username == "admin" && password == "admin"){
+localStorage.setItem("username",username);
+location.href("/home");
+}
+</script>
 <div class="container row">
             <div class="jumbotron col-sm-4 pull-center">
-                <form action="/login" method="post">
+                <form action="/login" method="get">
                     <div>
                         <label>Username:</label>
                         <input type="text" name="username"/>
